@@ -1,4 +1,10 @@
 package com.example.service;
 
-public class ReservationService {
+import com.example.model.Reservation;
+
+public class ReservationService extends AbstractFacade<Reservation> {
+
+    public ReservationService() {
+        super(Reservation.class);
+    }
 }
